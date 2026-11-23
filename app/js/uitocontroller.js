@@ -666,10 +666,10 @@ dim[1]=[700,600]; //brain - placholder
 dim[2]=[705,400]; //ohm64
 dim[3]=[542,541]; //block
 dim[4]=[654,392]; //code v2
-dim[7]=[705,743]; //ohmrgb
+dim[7]=[705,453]; //ohmrgb (was 743: taller than the picture, which left an empty area under it)
 dim[8]=[707,516]; //cntrl:r
 dim[9]=[700,600]; //brain v2 - placholder
-dim[11]=[690,485]; //alias
+dim[11]=[690,490]; //alias (the picture is 490 high)
 dim[12]=[700,607]; //base
 dim[13]=[700,600]; //brain jr - placholder
 dim[16]=[802,712]; //DS1 
@@ -786,7 +786,7 @@ function product(v){
 	$('#canvas').height(dim[pid][1]);
 	$('#paper').width(dim[pid][0]);
 	$('#paper').height(dim[pid][1]);
-	$('#faceplate_img').attr('src','app/faceplate_'+pid+'.gif').css({width: dim[pid][0], height: dim[pid][1]}); //drawn under the Raphael layer (see style.css)
+	$('#faceplate_img').attr('src','app/faceplate_'+pid+'.gif').css({width: "auto", height: "auto"}); //drawn under the Raphael layer (see style.css), at its own size like the original editor's background (dim[] can differ from the picture: OhmRGB 743 vs 453 px high)
 	$('#inspectors').width(dim[pid][0]);
 	//console.log("BANK COUNT "+bankcount);
 	//remove any extra bank channel inputs (code has less than alias, for example)
