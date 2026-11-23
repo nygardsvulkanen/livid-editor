@@ -4,6 +4,25 @@ A browser editor for **Livid Instruments** MIDI controllers: set what every knob
 
 This is an updated version of Livid's own online editor. Livid Instruments is no longer in business and the original editor is no longer hosted, so this repo keeps it working in today's browsers and fixes a number of bugs.
 
+<p align="center"><img src="screenshots/alias8.png" width="90%" alt="The editor with an Alias 8: global settings, the faceplate with its button colours, and the inspector"></p>
+
+<table>
+  <tr>
+    <td><img src="screenshots/ohmrgb.png" alt="OhmRGB in the editor"><br><sub>OhmRGB</sub></td>
+    <td><img src="screenshots/cntrlr.png" alt="CNTRL:R in the editor"><br><sub>CNTRL:R</sub></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/base2.png" alt="Base II in the editor"><br><sub>Base II</sub></td>
+    <td><img src="screenshots/ds1.png" alt="DS1 in the editor"><br><sub>DS1</sub></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/code.png" alt="Code in the editor"><br><sub>Code</sub></td>
+    <td></td>
+  </tr>
+</table>
+
+<sub>The Alias 8 shows one of the presets in `Presets/`. The other models are shown with an empty setup: the screenshots were made without the hardware, so their buttons are unlit and the settings are blank until a real controller answers.</sub>
+
 ## Which controllers
 
 | Controller | Status |

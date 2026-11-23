@@ -169,3 +169,4 @@ Open `index.html` in **Google Chrome** or **Microsoft Edge** and allow MIDI / sy
 ## 2026-11-23 – Generic read-me
 - README rewritten for any Livid controller: which models are supported and tested, how to start it on any system, what the wizard templates do.
 - Wizard: the Ableton template is now called "For the Alias8_Live script" and says it is only for that script.
+- README: screenshots of the editor with the Alias 8, OhmRGB, CNTRL:R, Base II, DS1 and Code (`screenshots/`).
