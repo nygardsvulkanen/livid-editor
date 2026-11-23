@@ -171,3 +171,4 @@ Open `index.html` in **Google Chrome** or **Microsoft Edge** and allow MIDI / sy
 - Wizard: the Ableton template is now called "For the Alias8_Live script" and says it is only for that script.
 - README: screenshots of the editor with the Alias 8, OhmRGB, CNTRL:R, Base II, DS1 and Code (`screenshots/`).
 - Fix: the faceplate picture is shown at its own size again (as in the original editor). It was stretched to the faceplate box: the OhmRGB looked tall (box 743 px, picture 453 px), the DS1 a little wide and the Alias 8 5 px short. OhmRGB box now 453 px high, Alias 8 490 px. Screenshots retaken.
+- README: "Is it safe?" section (settings only, no firmware; how to undo a bad setting).

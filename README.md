@@ -42,6 +42,18 @@ The fixes in this version (MIDI connection, reading and writing settings, preset
 
 Connect the controller first, then open the editor; pick its port if it isn't found automatically. Settings are read from the controller one by one (a progress bar shows it). Changes are sent right away; press **Save to device** to keep them after unplugging.
 
+## Is it safe?
+
+The editor only changes **settings** – what each control sends, LED colours, banks, channels – using the same system-exclusive commands as Livid's own editor. It never touches the **firmware**: it has no firmware updater and doesn't talk to the controller's bootloader. So it can't turn a controller into a brick, but a bad setting can make it *look* dead (no lights, every knob on the same CC, banks on unexpected channels). That's always recoverable:
+
+- **Before you change a lot:** save the current settings with **create file** (the setup wizard makes a backup for you).
+- **Changes are temporary until you press Save to device.** If something looks wrong and you haven't saved, unplug the controller and plug it back in.
+- **To go back to factory settings:** press **defaults (reset)** – it sends the controller's own factory-reset command. Or load your backup with **Choose File** and press **Save to device**.
+- **Don't unplug the controller while it is saving** (right after Save to device or a reset).
+- **Reverse encoder direction** in the Alias 8 Global panel is experimental (an undocumented command); it is only stored if you press Save to device.
+
+Models other than the Alias 8 haven't been tested with this version (see the table above), but they use the original editor's code for reading and writing their settings.
+
 ## Setup wizard (Alias 8 only)
 
 The **Setup wizard** button sets up the whole Alias 8 in a few steps: knob/fader CC numbers, button notes and behaviour, LED colours per row, bank channels and the encoder. It can write the setup to one bank, banks 1–5 or all 15, and saves a backup preset first. Templates:
