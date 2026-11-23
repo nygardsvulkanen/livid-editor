@@ -2,8 +2,7 @@
 h1,h2,h3{color:#fff}a{color:#3ec9b0}code{background:#1c2029;padding:1px 5px;border-radius:4px;font-size:.92em}
 pre{background:#1c2029;padding:12px;border-radius:8px;overflow:auto}pre code{padding:0}
 table{border-collapse:collapse;margin:12px 0;font-size:.9em;display:block;overflow-x:auto}th,td{border:1px solid #2c3240;padding:6px 9px;vertical-align:top;text-align:left}
-th{background:#1a1f28;color:#fff}tr:nth-child(even) td{background:#12151b}strong{color:#fff}</style></head><body>
-<h1>Fixes to the Livid Online Editor (October 2026)</h1>
+th{background:#1a1f28;color:#fff}tr:nth-child(even) td{background:#12151b}strong{color:#fff}</style></head><body><h1>Fixes to the Livid Online Editor (October 2026)</h1>
 <p>Open <code>index.html</code> in <strong>Google Chrome</strong> or <strong>Microsoft Edge</strong> and allow MIDI / system-exclusive access when asked.
 (Safari has no Web MIDI support.)</p>
 <h2>MIDI connection (js/midiio.js, rewritten on the browser's Web MIDI API — JZZ.js is no longer used)</h2>
@@ -174,4 +173,7 @@ th{background:#1a1f28;color:#fff}tr:nth-child(even) td{background:#12151b}strong
 <li>Hide the return columns: separate for the Perform and the Track page (each its own ◀ / ▶ RET); HIDE_RETURN_COLUMNS is now a list of pages, e.g. ("perform",).</li>
 <li>Fix: on the Track page the return (send) columns no longer cover tracks: the track columns are the ones left of all its return columns, and scrolling goes far enough for the last track to show there (on Perform, with fewer return columns, the last column can then be empty).</li>
 </ul>
-</body></html>
+<h2>2026-11-23 – License</h2>
+<ul>
+<li>Added an MIT license (<code>LICENSE</code>) for the changes in this repo; third-party libraries keep their own licenses.</li>
+</ul></body></html>

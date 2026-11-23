@@ -162,3 +162,6 @@ Open `index.html` in **Google Chrome** or **Microsoft Edge** and allow MIDI / sy
 - Hide the return columns: ◀ / ▶ RET at the end of the fader legend on the Perform and Track pages hides or shows the return columns, on the controller too (all 8 columns tracks). New: the viewer can send commands to the script (status_viewer.py POST /control → UDP 9878; STATUS_CONTROL_PORT, HIDE_RETURN_COLUMNS in settings.py). Restart the status viewer.
 - Hide the return columns: separate for the Perform and the Track page (each its own ◀ / ▶ RET); HIDE_RETURN_COLUMNS is now a list of pages, e.g. ("perform",).
 - Fix: on the Track page the return (send) columns no longer cover tracks: the track columns are the ones left of all its return columns, and scrolling goes far enough for the last track to show there (on Perform, with fewer return columns, the last column can then be empty).
+
+## 2026-11-23 – License
+- Added an MIT license (`LICENSE`) for the changes in this repo; third-party libraries keep their own licenses.
