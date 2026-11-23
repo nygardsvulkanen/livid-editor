@@ -165,3 +165,7 @@ Open `index.html` in **Google Chrome** or **Microsoft Edge** and allow MIDI / sy
 
 ## 2026-11-23 – License
 - Added an MIT license (`LICENSE`) for the changes in this repo; third-party libraries keep their own licenses.
+
+## 2026-11-23 – Generic read-me
+- README rewritten for any Livid controller: which models are supported and tested, how to start it on any system, what the wizard templates do.
+- Wizard: the Ableton template is now called "For the Alias8_Live script" and says it is only for that script.

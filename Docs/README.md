@@ -1,6 +1,6 @@
 # Livid Online Editor (updated)
 
-Editor for Livid controllers (made and tested for the **Alias 8**).
+Editor for Livid Instruments controllers: Ohm64, OhmRGB, Code, Base, Base II, block, CNTRL:R, DS1 and Alias 8. Tested with the **Alias 8**; the other models are supported but not tested with this version (see the main `README.md`).
 
 ## Starting it
 
@@ -20,7 +20,7 @@ See `CHANGES.md` for what was fixed and added.
 - **Livid Editor.html** – the editor
 - **Start editor (Firefox).command** – starts it in Firefox
 - **app/** – the editor's code, styles and pictures (leave it next to the page)
-- **Ableton/** – the Alias8_Live control surface script for Ableton Live 12 and its instructions
-- **Presets/** – preset files you can load in the editor
-- **Docs/** – this file and the change list
-- **Old files/** – parts of the original download that the editor doesn't use any more (safe to delete)
+- **Presets/** – example preset files you can load in the editor
+- **Docs/** – this file, the change list and `How This Works.rtf` (notes on the code)
+
+The Alias8_Live script for Ableton Live, which the wizard's "For the Alias8_Live script" template sets the Alias 8 up for, is a separate repo: https://github.com/nygardsvulkanen/alias8-live

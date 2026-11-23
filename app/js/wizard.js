@@ -15,7 +15,7 @@ var WIZ_TEMPLATES = {
 		knobTop: 1, knobBot: 9, fader: 17, master: 25, btnType: 0, btnTop: 0, btnBot: 8},
 	daw: {label: "DAW-friendly", desc: "Only CCs that no instrument uses by default (102–117, 20–28), so MIDI-learn never clashes. Buttons send notes 36–51 (C1 up), which suits drum racks.",
 		knobTop: 102, knobBot: 110, fader: 20, master: 28, btnType: 0, btnTop: 36, btnBot: 44},
-	ableton: {label: "Ableton script (Alias8_Live)", desc: "Sets everything the Alias8_Live script for Ableton needs: factory numbering, momentary buttons, the Ableton colour map, lights controlled by Ableton, and the encoder's CC mode for tempo. Goes straight to the review.",
+	ableton: {label: "For the Alias8_Live script", desc: "Only for the Alias8_Live control surface script for Ableton Live (github.com/nygardsvulkanen/alias8-live) – for anything else, pick Sequential or DAW-friendly. Sets everything that script needs: factory numbering, momentary buttons, the Ableton colour map, lights controlled by Ableton, and the encoder's CC mode for tempo. Goes straight to the review.",
 		knobTop: 1, knobBot: 9, fader: 17, master: 25, btnType: 0, btnTop: 0, btnBot: 8, togTop: 0, togBot: 0, colTop: 0, colBot: 0, banks: "seq", encBank: true, applyTo: "all"},
 	current: {label: "Current settings", desc: "Start from what your controller has now and adjust from there."}
 };
@@ -144,8 +144,8 @@ function wizRender(){
 		h += '<div class="wizgroup" style="margin-top:16px"><h3>Apply this setup to</h3>'+
 			'<p class="wizhint" style="margin:-2px 0 8px">Each bank keeps its own knob, fader and button numbers.</p>'+
 			wizRadio("applyTo","current",wiz.applyTo,"Only the active bank (bank "+wizBankNow()+")","")+
-			wizRadio("applyTo","12345",wiz.applyTo,"Banks 1-5","For example: the five pages of the Ableton script.")+
-			wizRadio("applyTo","all",wiz.applyTo,"All 15 banks","Recommended for the Ableton script: every page (bank) you put in PAGE_ORDER works.")+'</div>';
+			wizRadio("applyTo","12345",wiz.applyTo,"Banks 1-5","For example: five pages of a control surface script.")+
+			wizRadio("applyTo","all",wiz.applyTo,"All 15 banks","Recommended for the Alias8_Live script: every page (bank) you put in its PAGE_ORDER works.")+'</div>';
 	}else if(s==5){
 		var errs = wizCheck();
 		h += '<div class="wizsummary">'+
@@ -158,7 +158,7 @@ function wizRender(){
 			'<div><span>Banks</span><b>'+(wiz.banks=="seq"?'channels 1–15':(wiz.banks=="one"?'all on channel '+wiz.bankCh:'unchanged'))+(wiz.encBank?' · encoder changes bank':'')+'</b></div>'+
 			'<div><span>Applied to</span><b>'+({current:"bank "+wizBankNow()+" only", "12345":"banks 1-5", "123456":"banks 1-6", all:"all 15 banks"}[wiz.applyTo])+'</b></div>'+
 			(wiz.template=="ableton" ?
-			'<div><span>Colour map</span><b>Ableton script (velocity 1 red, 4 green, 8 yellow, 16 blue, 32 pink, 64 cyan, 127 white)</b></div>'+
+			'<div><span>Colour map</span><b>Alias8_Live script (velocity 1 red, 4 green, 8 yellow, 16 blue, 32 pink, 64 cyan, 127 white)</b></div>'+
 			'<div><span>Button lights</span><b>controlled by Ableton (local lighting off, any-channel off)</b></div>'+
 			'<div><span>Encoder, CC mode</span><b>CC 42, relative (tempo in the script)</b></div>' : '')+
 			'</div>';
