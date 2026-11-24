@@ -12,4 +12,4 @@ Owner: Daniel (writes in Swedish; answer in Swedish, keep code/comments/docs in 
 ## Working rules
 - Every change: add a line to `Docs/CHANGES.md`, regenerate the html docs (python `markdown`, extensions `tables` + `fenced_code`; keep the existing `<head>`), commit.
 - Test with `python3 -m http.server 8642` and a browser; MIDI can't be tested without the controller – keep sysex changes small and check them against existing presets.
-- Related repo: alias8-live (the Ableton script that uses the banks this editor writes).
+- Related repo: alias8-scribble (script folder Alias8_Live; renamed from alias8-live on 2026-11-24) (the Ableton script that uses the banks this editor writes).

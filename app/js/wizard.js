@@ -15,7 +15,7 @@ var WIZ_TEMPLATES = {
 		knobTop: 1, knobBot: 9, fader: 17, master: 25, btnType: 0, btnTop: 0, btnBot: 8},
 	daw: {label: "DAW-friendly", desc: "Only CCs that no instrument uses by default (102–117, 20–28), so MIDI-learn never clashes. Buttons send notes 36–51 (C1 up), which suits drum racks.",
 		knobTop: 102, knobBot: 110, fader: 20, master: 28, btnType: 0, btnTop: 36, btnBot: 44},
-	ableton: {label: "For the Alias8_Live script", desc: "Only for the Alias8_Live control surface script for Ableton Live (github.com/nygardsvulkanen/alias8-live) – for anything else, pick Sequential or DAW-friendly. Sets everything that script needs: factory numbering, momentary buttons, the Ableton colour map, lights controlled by Ableton, and the encoder's CC mode for tempo. Goes straight to the review.",
+	ableton: {label: "For the Alias8_Live script", desc: "Only for the Alias8_Live control surface script for Ableton Live (github.com/nygardsvulkanen/alias8-scribble) – for anything else, pick Sequential or DAW-friendly. Sets everything that script needs: factory numbering, momentary buttons, the Ableton colour map, lights controlled by Ableton, and the encoder's CC mode for tempo. Goes straight to the review.",
 		knobTop: 1, knobBot: 9, fader: 17, master: 25, btnType: 0, btnTop: 0, btnBot: 8, togTop: 0, togBot: 0, colTop: 0, colBot: 0, banks: "seq", encBank: true, applyTo: "all"},
 	current: {label: "Current settings", desc: "Start from what your controller has now and adjust from there."}
 };
