@@ -23,4 +23,4 @@ See `CHANGES.md` for what was fixed and added.
 - **Presets/** – example preset files you can load in the editor
 - **Docs/** – this file, the change list and `How This Works.rtf` (notes on the code)
 
-The Alias8_Live script for Ableton Live, which the wizard's "For the Alias8_Live script" template sets the Alias 8 up for, is a separate repo: https://github.com/nygardsvulkanen/alias8-scribble
+The Alias8_Scribble script for Ableton Live, which the wizard's "For the Alias8_Scribble script" template sets the Alias 8 up for, is a separate repo: https://github.com/nygardsvulkanen/alias8-scribble

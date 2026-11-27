@@ -60,10 +60,10 @@ The **Setup wizard** button sets up the whole Alias 8 in a few steps: knob/fader
 
 - **Sequential** – the Alias 8 factory layout: knobs and faders CC 1–25, buttons notes 0–15.
 - **DAW-friendly** – CCs that no instrument uses by default (102–117, 20–28), so MIDI-learn never clashes; buttons notes 36–51 for drum racks.
-- **For the Alias8_Live script** – only needed if you use [alias8-scribble](https://github.com/nygardsvulkanen/alias8-scribble), a control surface script for Ableton Live 12. It sets exactly what that script expects (see below). For any other use – another DAW, Live's own MIDI mapping, hardware synths – pick one of the other templates.
+- **For the Alias8_Scribble script** – only needed if you use [alias8-scribble](https://github.com/nygardsvulkanen/alias8-scribble), a control surface script for Ableton Live 12. It sets exactly what that script expects (see below). For any other use – another DAW, Live's own MIDI mapping, hardware synths – pick one of the other templates.
 - **Current settings** – start from what the controller has now.
 
-What the Alias8_Live template sets: factory numbering (CC 1–25, notes 0–15), momentary buttons, banks 1–15 on MIDI channels 1–15 written to all 15 banks, the encoder turning to change bank plus its CC mode on CC 42 (relative), a colour map where the button velocity picks the colour (1 red, 4 green, 8 yellow, 16 blue, 32 pink, 64 cyan, 127 white), and local LED control off so the script lights the buttons.
+What the Alias8_Scribble template sets: factory numbering (CC 1–25, notes 0–15), momentary buttons, banks 1–15 on MIDI channels 1–15 written to all 15 banks, the encoder turning to change bank plus its CC mode on CC 42 (relative), a colour map where the button velocity picks the colour (1 red, 4 green, 8 yellow, 16 blue, 32 pink, 64 cyan, 127 white), and local LED control off so the script lights the buttons.
 
 ## Presets
 

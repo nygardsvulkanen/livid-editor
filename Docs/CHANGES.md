@@ -173,3 +173,4 @@ Open `index.html` in **Google Chrome** or **Microsoft Edge** and allow MIDI / sy
 - Fix: the faceplate picture is shown at its own size again (as in the original editor). It was stretched to the faceplate box: the OhmRGB looked tall (box 743 px, picture 453 px), the DS1 a little wide and the Alias 8 5 px short. OhmRGB box now 453 px high, Alias 8 490 px. Screenshots retaken.
 - README: "Is it safe?" section (settings only, no firmware; how to undo a bad setting).
 - 2026-11-24: Links point to alias8-scribble (the Alias8_Live script repo was renamed from alias8-live).
+- 2026-11-27: The wizard template is now "For the Alias8_Scribble script" (the script folder was renamed from Alias8_Live).
